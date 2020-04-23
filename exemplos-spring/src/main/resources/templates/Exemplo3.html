@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo 3 Sprint MVC</title>
+    </head>
+    <body>
+        <h1>Exemplo 3 Sprint MVC</h1>
+        <p>Nome: <span th:text="${nome}">nome</span></p>
+        <p>Número: <span th:text="${numero}">numero</span></p>
+        <div th:if="${dtnasc != null}">
+            <p>Data Nascimento <span th:text="${dtnasc}">dtnasc</span></p>
+            <p>Idade: <span th:text="${idade}">idade</span></p>
+        </div>
+        <div th:unless="${dtnasc != null}">
+            <p>Data de Nascimento não informada</p>
+        </div>
+    </body>
+</html>

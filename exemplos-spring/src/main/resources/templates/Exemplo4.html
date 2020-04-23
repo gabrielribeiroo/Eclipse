@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo 4 Sprint MVC</title>
+    </head>
+    <body>
+        <h1>Exemplo 4 Sprint MVC</h1>
+        <ul th:each="it : ${itens}">
+            <li>
+                <b th:text="${it.valor}"></b> - <span th:text="${it.texto}"></span>
+                <span th:if="${it.mult10}">*****</span>
+            </li>
+        </ul>
+    </body>
+</html>
